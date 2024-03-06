@@ -251,7 +251,7 @@ body {
 }
 
 #gif-container img {
-    max-width: 50%; /* Ajuste la largeur maximale du gif */
+    max-width: 30%; /* Ajuste la largeur maximale du gif */
 }
 
 #hosted-by {
@@ -263,6 +263,7 @@ body {
     display: inline;
     -webkit-background-clip: text;
     color: transparent;
+    min-height: 20px;
     animation: rainbow 2s linear infinite;
 }
 
