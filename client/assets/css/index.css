@@ -233,3 +233,33 @@ body {
     background-color: #ff3300; /* Rouge fluo pour le bouton de soumission */
     color: #000000; /* Noir pour le texte du bouton de soumission */
 }
+
+/* Ajoutez ces styles à votre fichier index.css */
+
+#header-container {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: #00ccff; /* Bleu fluo pour le texte */
+}
+
+#hosted-by {
+    margin-top: 10px;
+}
+
+.rainbow-text {
+    background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    display: inline;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: rainbow 2s linear infinite;
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0% 80%;
+    }
+    100% {
+        background-position: 100% 20%;
+    }
+}
