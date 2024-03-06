@@ -251,7 +251,7 @@ body {
 }
 
 #gif-container img {
-    max-width: 100%; /* Ajuste la largeur maximale du gif */
+    max-width: 50%; /* Ajuste la largeur maximale du gif */
 }
 
 #hosted-by {
