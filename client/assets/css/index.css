@@ -113,7 +113,7 @@ select {
 
 /* Remove background color and add an SVG background for the submit button */
 #submit-button {
-    background: transparent url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path fill='white' d='M2.01 21L23 12 2.01 3 2 10l15 2-15 2z'/></svg>") no-repeat center center;
+    background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red) url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path fill='white' d='M2.01 21L23 12 2.01 3 2 10l15 2-15 2z'/></svg>") no-repeat center center;
     position: relative;
     color: white;
     width: 40px;
@@ -132,7 +132,7 @@ select {
     left: 0;
     right: 0;
     bottom: 0;
-    border: 3px solid transparent;
+    border: #px solid transparent;
     border-radius: 5px;
     background: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
     z-index: -1; /* Pour que le pseudo-élément soit derrière le contenu */
