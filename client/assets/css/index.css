@@ -117,9 +117,10 @@ select {
     color: white;
     width: 40px;
     height: 40px;
-    border: 3px solid yellow;
+    border: 3px solid transparent; /* Bordure transparente */
     border-radius: 5px;
-    border-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    background-clip: padding-box; /* Évite que la bordure affecte la couleur de fond */
+    background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
     display: inline;
     min-height: 20px;
     animation: rainbow 2s linear infinite;
