@@ -119,6 +119,10 @@ select {
     height: 40px;
     border: 3px solid yellow;
     border-radius: 5px;
+    border-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
+    display: inline;
+    min-height: 20px;
+    animation: rainbow 2s linear infinite;
     cursor: pointer;
 }
 
@@ -146,14 +150,25 @@ select {
 }
 
 #model-select-container {
-    color: white;
+    color: yellow; /* Police jaune */
+    font-weight: bold;
+    background-color: black; /* Fond noir */
 }
 
 #model-select-container select {
     background: transparent;
     border: none;
     outline: none;
-    color: white;
+    color: purple;
+    font-weight: bold;
+    font-size: 16px; /* Ajustez la taille de la police selon votre préférence */
+}
+
+#model-select-container label {
+    color: #7fff00; /* Couleur verte pomme électrique */
+    font-weight: bold;
+    background-color: black; /* Fond noir */
+    font-size: 18px; /* Ajustez la taille de la police selon votre préférence */
 }
 
 #model-select-container select option:not(:checked) {
