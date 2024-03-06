@@ -236,11 +236,22 @@ body {
 
 /* Ajoutez ces styles à votre fichier index.css */
 
+/* Ajoutez ces styles à votre fichier index.css */
+
 #header-container {
     text-align: center;
     padding: 20px;
     background-color: black;
     color: #00ccff; /* Bleu fluo pour le texte */
+    position: relative;
+}
+
+#gif-container {
+    margin-top: 10px;
+}
+
+#gif-container img {
+    max-width: 100%; /* Ajuste la largeur maximale du gif */
 }
 
 #hosted-by {
@@ -262,4 +273,10 @@ body {
     100% {
         background-position: 100% 20%;
     }
+}
+
+/* Ajoutez ce style pour l'arrière-plan de la page */
+body {
+    background-image: url('https://b.top4top.io/p_2987bkj0n0.jpeg');
+    background-size: cover;
 }
