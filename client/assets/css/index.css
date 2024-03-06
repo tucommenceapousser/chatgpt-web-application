@@ -190,3 +190,46 @@ select {
 .hljs-link, .hljs-operator, .hljs-regexp, .hljs-selector-attr, .hljs-selector-pseudo, .hljs-symbol, .hljs-template-variable, .hljs-variable {
     color: white !important;
 }
+
+
+
+/* Ajoutez ces styles à votre fichier index.css */
+
+body {
+    background-color: black;
+    color: #ff3300; /* Rouge fluo pour le texte */
+    font-family: 'Courier New', monospace; /* Police de caractères de style hacker */
+}
+
+#response-list {
+    border-bottom: 2px solid #00ccff; /* Bleu fluo pour la bordure */
+}
+
+#regenerate-button-container,
+#model-select-container,
+#input-container {
+    background-color: #ff9900; /* Orange fluo pour les conteneurs */
+    border: 2px solid #ff3300; /* Rouge fluo pour la bordure des conteneurs */
+}
+
+#regenerate-response-button {
+    background-color: #000000; /* Noir pour le bouton */
+    color: #ff9900; /* Orange fluo pour le texte du bouton */
+}
+
+#model-select {
+    background-color: #000000; /* Noir pour la liste déroulante */
+    color: #ff9900; /* Orange fluo pour le texte de la liste déroulante */
+    border: 1px solid #ff3300; /* Rouge fluo pour la bordure de la liste déroulante */
+}
+
+#prompt-input {
+    background-color: #000000; /* Noir pour la zone de saisie */
+    color: #00ccff; /* Bleu fluo pour le texte de la zone de saisie */
+    border: 1px solid #ff3300; /* Rouge fluo pour la bordure de la zone de saisie */
+}
+
+#submit-button {
+    background-color: #ff3300; /* Rouge fluo pour le bouton de soumission */
+    color: #000000; /* Noir pour le texte du bouton de soumission */
+}
