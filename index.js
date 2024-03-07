@@ -80,7 +80,7 @@ app.post('/get-prompt-result', async (req, res) => {
         }
         if (model === 'chatgpt') {
             const result = await openai.createChatCompletion({
-                model:"gpt-4-32k-0613",
+                model:"gpt-4",
                 messages: [
                     { role: "user", content: prompt }
                 ]
