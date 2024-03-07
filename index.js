@@ -80,7 +80,7 @@ app.post('/get-prompt-result', async (req, res) => {
         }
         if (model === 'chatgpt') {
             const result = await openai.createChatCompletion({
-                model:"gpt-4",
+                model:"gpt-4-32k-0613",
                 messages: [
                     { role: "user", content: prompt }
                 ]
@@ -88,7 +88,7 @@ app.post('/get-prompt-result', async (req, res) => {
             return res.send(result.data.choices[0]?.message?.content);
         }
         const completion = await openai.createCompletion({
-            model: 'text-davinci-003', // model name
+            model: 'gpt-3.5-turbo-instruct', // model name origin text-davinci-003
             prompt: `Please reply below question in markdown format.\n ${prompt}`, // input prompt
             max_tokens: 4000
         });
