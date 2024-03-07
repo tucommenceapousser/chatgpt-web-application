@@ -44,7 +44,7 @@ app.post('/transcribe', upload.single('audio'), async (req, res) => {
     try {
         const resp = await openai.createTranscription(
             fs.createReadStream(req.file.path),
-            "whisper-large-v3",
+            "whisper-1",
             'text'
         );
         return res.send(resp.data.text);
